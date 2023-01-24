@@ -6,10 +6,8 @@ namespace Fractal_Tree
     public partial class Form1 : Form
     {
 
-        float length;
         float changeAngleInRad = 0.5f;
         int depth = 13;
-        Random randomNumbersGenerator = new Random();
         bool SimulateRandomChange = false;
         bool InstructionsVisible = true;
         public Form1()
@@ -38,19 +36,29 @@ namespace Fractal_Tree
             {
                 case Keys.Left:
                     changeAngleInRad -= 0.05f;
+                    DrawScene(CreateGraphics());
+
                     break;
                 case Keys.Right:
                     changeAngleInRad += 0.05f;
+                    DrawScene(CreateGraphics());
+
                     break;
                 case Keys.Up:
                     depth += 1;
+                    DrawScene(CreateGraphics());
+
                     break;
                 case Keys.Down:
                     depth -= 1;
+                    DrawScene(CreateGraphics());
                     break;
+                case Keys.U:
+                   InstructionsVisible = InstructionsVisible ? false : true;
+                    DrawScene(CreateGraphics());
+                        break;
             }
 
-            DrawScene(CreateGraphics());
         }
 
         void branch(Graphics g, PointF point, float angle ,float length)
@@ -84,9 +92,8 @@ namespace Fractal_Tree
             int y2 = (int)point.Y + (int)(Math.Sin(angle) * length * 10.0);
             g.DrawLine(p, new Point(x2, y2), point ) ;
 
-            float changeValue = (SimulateRandomChange) ?(float) randomNumbersGenerator.Next(0,(int)length) *  (float) randomNumbersGenerator.NextDouble(): 1;
-            branch(g, new Point(x2, y2), angle - changeAngleInRad, (float)Math.Ceiling( (float) length -changeValue));
-            branch(g, new Point(x2, y2), angle + changeAngleInRad, (float)Math.Ceiling( (float) length -changeValue));
+            branch(g, new Point(x2, y2), angle - changeAngleInRad, (float)Math.Ceiling( (float) length -1));
+            branch(g, new Point(x2, y2), angle + changeAngleInRad, (float)Math.Ceiling( (float) length -1));
 
 
 
@@ -108,20 +115,20 @@ namespace Fractal_Tree
         {
             g.Clear(Color.Black);
 
-            DrawInstructions(g);
+
+            if (InstructionsVisible)
+                DrawInstructions(g);
+
+
 
             //g.DrawLine(Pens.White, this.Width / 2, this.Height, this.Width / 2, 650);
 
-            PointF point= new PointF(this.Width /2, 650);
+            PointF point = new PointF(this.Width /2, 650);
 
-            float angle = 30;
-            //branch(g, point,length,((float) Math.PI * angle /180));
-            //branch(g, point, length, ((float)Math.PI * 180 / 180) - ((float)Math.PI * angle / 180));
 
 
             branch(g, new PointF( ClientSize.Width / 2, ClientSize.Height - 10) , (float)-Math.PI/ 2, depth);
 
-            //branch(g, point, length,   0.7f *3.56f);
 
 
         }
