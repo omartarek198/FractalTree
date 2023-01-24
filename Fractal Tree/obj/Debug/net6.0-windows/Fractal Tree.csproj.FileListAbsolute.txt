@@ -1,0 +1,17 @@
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\bin\Debug\net6.0-windows\Fractal Tree.exe
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\bin\Debug\net6.0-windows\Fractal Tree.deps.json
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\bin\Debug\net6.0-windows\Fractal Tree.runtimeconfig.json
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\bin\Debug\net6.0-windows\Fractal Tree.dll
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\bin\Debug\net6.0-windows\Fractal Tree.pdb
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\obj\Debug\net6.0-windows\Fractal Tree.csproj.AssemblyReference.cache
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\obj\Debug\net6.0-windows\Fractal_Tree.Form1.resources
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\obj\Debug\net6.0-windows\Fractal Tree.csproj.GenerateResource.cache
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\obj\Debug\net6.0-windows\Fractal Tree.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\obj\Debug\net6.0-windows\Fractal Tree.AssemblyInfoInputs.cache
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\obj\Debug\net6.0-windows\Fractal Tree.AssemblyInfo.cs
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\obj\Debug\net6.0-windows\Fractal Tree.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\obj\Debug\net6.0-windows\Fractal Tree.dll
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\obj\Debug\net6.0-windows\refint\Fractal Tree.dll
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\obj\Debug\net6.0-windows\Fractal Tree.pdb
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\obj\Debug\net6.0-windows\Fractal Tree.genruntimeconfig.cache
+C:\Users\Dell\Source\Repos\Fractal Tree\Fractal Tree\obj\Debug\net6.0-windows\ref\Fractal Tree.dll
